@@ -9,12 +9,12 @@
     <meta property="og:description" content="Project is aimed at stabilizing the psycho-emotional state of users through the personalization of artificial lighting in space">
     <meta property="og:url" content="https://andrewlaptev.github.io">
 
-    <title>NIRMA от АлгоМата</title>
+    <title>Project NIRMA 621305</title>
     <style>
         body {
             max-width: 1000px;
             margin: auto;
-            padding: 25px 50px;
+            padding: 50px 50px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 19px;
         }
@@ -40,76 +40,85 @@
         }
 
         .logo {
-            width: 200px;
+            width: 300px;
         }
     </style>
 </head>
 
 <body>
     <header class="header">
-        <img src="photo.jpg" alt="Logo" class="logo">
-
-        <h1>NIRMA от АлгоМата</h1>
-
-        <p>
-            Under construction
-        </p>
+        <img src="logo_pic.jpg" alt="Logo" class="logo">
+        <h1>AlgoMath Lab of ITMO University</h1>
+        <h2>Project NIRMA 621305 “Generation 
+            and stratification of data for the evaluation and quality control 
+            of predictive models of the dynamics of socioeconomic systems” (2021-2022)</h2>
     </header>
-<p>
-Прибежали в избу дети,<br>
-Второпях зовут отца:<br>
-Тятя, тятя, наши сети<br>
-Притащили мертвеца!<br>
- </p>
-<p align="left">
-<I>Пушкин</I></p>
-    <h2 id="about">About</h2>
+    <h3 id="about">About the project</h3>
     <p>
-        Our project is aimed.
+        The purpose of the project is to develop methods for assessing and controlling 
+        the quality of predictive models (including machine learning models) 
+        of the dynamics of socioeconomic systems.
     </p>
-    <h3 id="why">Why use it</h3>
     <p>
-        It is necessary to use.
+        As part of the research work, we develop and test new methods for generating 
+        and stratifying data for assessing and controlling the quality of predictive models 
+        of the dynamics of socioeconomic systems, including models for estimating time of arrival, 
+        link prediction in complex networks; models for predicting the behavior of bank customers 
+        and related financial time series and event chains; recommendation models.
     </p>
-    <h3 id="for-whom">For whom</h3>
-    <p>This software is necessary for:</p>
+    <h3 id="why">About the methods</h3>
+    <p>
+        The methods of data generation and stratification developed during the project are used 
+        to assess and improve the quality of predictive models of evolving complex systems 
+        (transportation in a city, social networks with user profiles, groups of bank customers, etc.), 
+        in particular, they can be used as part of dynamic decision support systems in the areas of 
+        time management, banking, Internet marketing, and chain retail in the presence of newly 
+        incoming data.
+    </p>
+    <h3 id="for-whom">Software modules</h3>
+    <p>The methods are implemented in the form of following modules:</p>
     <ul>
         <li>
-            people who want
+            <p>1. The module  <a href="https://github.com/AlgoMathITMO/Strat-mETA/">Strat-mETA</a> 
+            for stratification of GPS trajectory data with further estimating time of arrival (ETA) 
+            with a fine-tuned combination of simple regression-based ETA prediction methods. 
+            The results are illustrated on a new real-world car travel dataset of GPS trajectory data.</p>
+            <p> The companion paper is R. Al Naim, P. Chunaev, K. Bochenina, 
+                <a href="http://urban-computing.com/urbcomp2022/file/UrbComp2022_paper_4809.pdf">«Reproducibility 
+                and Progress in Estimating Time of Arrival, or Can Simple Methods Outperform Deep Learning Ones?»</a>, 
+                The 11th International Workshop on Urban Computing, the 28th ACM SIGKDD 2022 (Best Paper Award Runner Up).
+            </p>
         </li>
         <li>
-            users who have 
+            <p>2. The module LinkPredictability <a href="https://github.com/AlgoMathITMO/link_prediction/">LinkPredictability</a> 
+            for stratification of predictability (model’s quality level) of links in large non-attributed and node-attributed 
+            networks with further meta-classification. The results are illustrated on synthetic and real-world non-attributed 
+            and node-attributed network datasets.</p>
+            <p> The companion papers are Stavinova E., Evmenova E., Antonov A., Chunaev P. (2022) 
+                <a href="https://doi.org/10.1007/978-3-030-93409-5_32">«Link Predictability Classes in Complex Networks»</a>, 
+                In: Benito R.M., Cherifi C., Cherifi H., Moro E., Rocha L.M., Sales-Pardo M. 
+                (eds) Complex Networks & Their Applications X. COMPLEX NETWORKS 2021. Studies in Computational Intelligence, vol. 1015. Springer, Cham. 
+                and Antonov, A., Stavinova, E., Evmenova, E., Chunaev., P. 
+                <a href="https://doi.org/10.1007/s13278-022-00912-w">«Link predictability classes in large node-attributed networks»</a>, 
+                Soc. Netw. Anal. Min. 12, 81 (2022).</p>
         </li>
+            <p>3. The module <a href="https://github.com/AlgoMathITMO/Dynamic-classifier">DynamicTransactionClassifier</a>
+                for dynamic classification of bank clients by the predictability (model’s quality level) 
+                of their transactional behavior. The results are illustrated on real-world clients’ transactions datasets 
+                in periods with different socioeconomical situation.</p>
+            <p>The companion paper is Bezbochina, A., Stavinova, E., Kovantsev, A., Chunaev, P. (2022). 
+                <a href="https://doi.org/10.1007/978-3-031-08751-6_36">«Dynamic Classification of Bank Clients by the Predictability of Their Transactional Behavior»</a>, 
+                In: Groen, D., de Mulatier, C., Paszynski, M., Krzhizhanovskaya, V.V., Dongarra, J.J., Sloot, P.M.A. 
+                (eds) Computational Science – ICCS 2022. ICCS 2022. Lecture Notes in Computer Science, vol 13350. Springer, Cham. 
+            </p>
         <li>
-            employers who want to increase
-        </li>
-    </ul>
-    <h2 id="software-modules">Software modules</h2>
-    <p>
-        The project consists of:
-    </p>
-    <ul>
-        <li>
-            <strong>Software module for localization of owners of digital assistants
-                according to mobile device data</strong>
-            (<a href="https://github.com/AndrewLaptev/ble_light_mobile">BLight</a>)
-            - performs the tasks of determining the user's location to find the
-            nearest light sources so that the user controls the nearest luminaires
-            to him
-        </li>
-        <li>
-            <strong>Software module for normalization of the psycho-emotional state and
-                personalization of the environment through artificial lighting</strong>
-            (<a href="https://github.com/AndrewLaptev/ble_light_esp32">BLightESP32</a>) - performs the tasks of
-            controlling lighting parameters through
-            changes in color temperature and luminous flux of the luminaire
-        </li>
-        <li>
-            <strong>Software module for recognizing a psychoemotional state based on data
-                from the ecosystem of digital assistants</strong>
-            (<a href="https://github.com/TimurSamigulin/core-emotion">CoreEmotion</a>) - is designed to determine the
-            user's psycho-emotional state by text
-            messages exchanged between people in the Avatar ecosystem
+            <p>3. The module <a href="https://github.com/AlgoMathITMO/SynEvaRec">SynEvaRec</a> for synthetic 
+                data generation applied for evaluating recommender systems in different scenarios. 
+                The results are illustrated on synthetic and real-world user-item-response datasets</p>
+            <p>The companion paper is V. Provalov, E. Stavinova and P. Chunaev, 
+                <a href="https://doi.org/10.1109/ICDMW53433.2021.00014">«SynEvaRec: A Framework for Evaluating Recommender Systems on Synthetic Data Classes»</a>, 
+                2021 IEEE International Conference on Data Mining Workshops (ICDMW), 2021, pp. 55-64. 
+            </p>
         </li>
     </ul>
 </body></html>
